@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3001;
 
 // Initialize Groq client
 const groq = new Groq({
-  apiKey: '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',
+  apiKey: process.env.GROQ_API_KEY as string,
 });
 
 // Promisify exec for async/await usage
